@@ -3,13 +3,19 @@
     padding: 0;
     font-family: "Roboto";
 }
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
 nav{
-    position: fixed;
+    /* position: fixed; */
     text-align: right;
     text-transform: uppercase;
     padding:20px 0px;
     width: 100%;
-    background-color: #EE7330;
+    /* background-color: #EE7330; */
+    background-color: #10c9c3;
 }
 nav a{
     text-decoration: none;
@@ -20,4 +26,127 @@ nav a{
 }
 nav a:hover{
     color: #10C9C3
+}
+
+.fSection{
+    background-image: url("../img/webDesign.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.fSection div{
+    width: 40vw;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.fSection div p{
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+.fSection div span{
+    font-size: 1.5em;
+    font-weight: 100;
+    line-break: 5px;
+}
+.fSection div button{
+    display: block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    background-color: #10c9c3;
+    font-size: 0.75em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.fSection div button:hover{
+    color:  #10c9c3;
+    background-color: white;
+}
+.aboutUs{
+    height: 60vh;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -25%;
+    text-align: center;
+}
+.aboutUs p{
+    padding-bottom: 20px;
+    font-size: 2em;
+}
+.aboutUs span{
+    font-size: 1.25em;
+    font-weight: 100;
+}
+.aboutUs img{
+    width: 400px;
+    height: 200px;
+}
+.skills{
+    height: 70vh;
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.skills div{
+    width: 50%;
+    padding-left: 60px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+}
+.skills div p{
+    color: white;
+    font-size: 2.5em;
+    padding-bottom: 30px;
+}
+.skills div label{
+    display: block;
+    padding-bottom: 10px;
+    font-size: 1.35em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 100;
+}
+.skills div label meter{
+    display: block;
+    width: 80%;
+    border: none;
+    border-radius: none;
+}
+.skills div label meter::-webkit-meter-optimum-value{
+    background: #10c9c3; 
+}
+.skills div label meter::-moz-meter-optimum-value {
+    background: #10c9c3; 
+}
+.data{
+    height: 20vh;
+    background-color: #10c9c3;
+    color: white;
+}
+.data div{
+    float: left;
+    width: 25%;
+    text-align: center;
+    /* line-height: 20vh; nie działa ale można próbować albo znaleźć inny sposób np z table cell */
+}
+.data div i{
+}
+.data div span{
+}
+.data div p{
 }
