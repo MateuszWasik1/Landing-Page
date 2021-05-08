@@ -3,6 +3,9 @@
     padding: 0;
     font-family: "Roboto";
 }
+.hidden{
+    display: none;
+}
 .clearfix::after{
     content: "";
     display: block;
@@ -150,3 +153,46 @@ nav a:hover{
 }
 .data div p{
 }
+
+.gallery{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+/* .gallery div{
+    display: flex;
+    flex-wrap: wrap;
+} */
+.gallery img{
+    justify-content: center; 
+    align-items: center; 
+    align-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 25%;
+    height: 45%;
+}
+.gallery p{
+    height: 10%;
+    width: 100%;
+    margin: 0 auto;
+    line-height: calc((100% - 90%) + 7vh);
+    background-color: lightgray;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.gallery p:hover{
+    font-size:1.1em;
+}
+.video{
+    
+}
+/*po kliknięciu img pojawia się popup ze sliderem (zastosować lightboxa) */
+/* testy funkcjonalbne
+rest api 
+test case 
+testy funkcjonalne testy biało i czarno skrzynkowe, piramida testów, sql jak się zna , kolejny etap zadanie zwiazane z oprogramowaniem grafik równowazny 9 podstawowy 0 planowany i wykonany , 
+dac znac sms po rozmowie Wojtkowi
+zrobić CV , wysłać na e-mail tej pani, czekać na telefon, w międzyczasie dać znać Wojtkowi i uczyć się dużo teorii do tego  */
