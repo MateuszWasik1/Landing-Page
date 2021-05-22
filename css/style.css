@@ -14,7 +14,7 @@
 body{
     overflow-x: hidden;
 }
-nav{
+.nav{
     /* position: fixed; */
     text-align: right;
     text-transform: uppercase;
@@ -23,14 +23,14 @@ nav{
     /* background-color: #EE7330; */
     background-color: #10c9c3;
 }
-nav a{
+.nav a{
     text-decoration: none;
     padding: 0 20px;
     font-weight: bold;
     color: black;
     transition: 0.5s;
 }
-nav a:hover{
+.nav a:hover{
     color: #10C9C3
 }
 
@@ -150,13 +150,14 @@ nav a:hover{
     text-align: center;
     /* line-height: 20vh; nie działa ale można próbować albo znaleźć inny sposób np z table cell */
 }
+/*
 .data div i{
 }
 .data div span{
 }
 .data div p{
 }
-
+*/
 .gallery{
     height: 70vh;
     width: 100vw;
@@ -213,7 +214,31 @@ nav a:hover{
     height: 70%;
 
 }
-
+.description{
+    background-color: #EEE;
+    display: flex;
+    flex-wrap: wrap;
+}
+.description div{
+    width: 25%;
+    text-align: center;
+    margin: 50px 0;
+}
+.description div i{
+    font-size: 2em;
+    color: #999;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.description div p{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.description div span{
+    margin: 0 20px;
+    text-align: center;
+}
 .form{
     height: 80vh;
     background-color: #EEE;
@@ -263,10 +288,47 @@ nav a:hover{
     font-weight: bold;
     font-size: 0.8em;
 }
+footer{
+    height: 25vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 300;
+    margin: 0 auto;
+}
+footer div{
+    width: 24%;
+}
+footer .companyData{
+    margin-left: 50px;
+}
+footer .contact{
+    margin-left: 50px;
+
+}
+footer .navigation{
+    display: flex;
+    flex-direction: row;
+}
+footer .navigation a{
+    text-decoration: none;
+    padding: 20px 25px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+footer .socialMedia{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+footer .socialMedia a{
+    padding: 5px 0px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
 /*po kliknięciu img pojawia się popup ze sliderem (zastosować lightboxa) */
-/* testy funkcjonalbne
-rest api 
-test case 
-testy funkcjonalne testy biało i czarno skrzynkowe, piramida testów, sql jak się zna , kolejny etap zadanie zwiazane z oprogramowaniem grafik równowazny 9 podstawowy 0 planowany i wykonany , 
-dac znac sms po rozmowie Wojtkowi
-zrobić CV , wysłać na e-mail tej pani, czekać na telefon, w międzyczasie dać znać Wojtkowi i uczyć się dużo teorii do tego  */
