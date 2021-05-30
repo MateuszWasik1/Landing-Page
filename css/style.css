@@ -15,7 +15,6 @@ body{
     overflow-x: hidden;
 }
 .nav{
-    /* position: fixed; */
     text-align: right;
     text-transform: uppercase;
     padding:20px 0px;
@@ -188,6 +187,25 @@ body{
 .gallery p:hover{
     font-size:1.1em;
 }
+.hiddenSection{
+    height: 35vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    overflow-x: hidden;
+    display: none;
+}
+.hiddenGallery{
+    justify-content: center; 
+    align-items: center; 
+    align-content: center;
+    flex-grow: 1;
+    width: 25%;
+    height: 45%;
+    overflow-x: hidden;
+}
+/* Sekcja Video  */
 
 .video{
     width: 100%;
@@ -208,12 +226,36 @@ body{
     color: gray;
     padding-bottom: 5%;
 }
-.video video{
+.video div{
+    height: 100%;
+    position: relative;
+}
+.video .videoPlayer{
     margin-top: 5%;
     width: 60%;
     height: 70%;
-
+    position: relative !important;
 }
+.video .player{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border-radius: 50%;
+    border: 0px;
+    background-color: rgba(16, 201, 195, 0);
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+}
+div:hover .player{
+    background-color: rgba(16, 201, 195, 1);
+}
+
+
 .description{
     background-color: #EEE;
     display: flex;
