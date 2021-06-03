@@ -3,6 +3,9 @@
     padding: 0;
     font-family: "Roboto";
 }
+.galleryHeight{
+    height: 25vh !important;
+}
 .hidden{
     display: none;
 }
@@ -174,6 +177,8 @@ body{
     width: 25%;
     height: 45%;
     overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 1;
 }
 .gallery p{
     height: 10%;
@@ -183,27 +188,37 @@ body{
     background-color: lightgray;
     text-transform: uppercase;
     cursor: pointer;
+    z-index: 1;
 }
 .gallery p:hover{
     font-size:1.1em;
 }
 .hiddenSection{
-    height: 35vh;
+    height: 0vh;
     width: 100vw;
     display: flex;
-    flex-wrap: wrap;
     text-align: center;
     overflow-x: hidden;
-    display: none;
 }
 .hiddenGallery{
+    display: flex;
+}
+.hiddenGallery img{
     justify-content: center; 
     align-items: center; 
     align-content: center;
     flex-grow: 1;
+    flex-shrink: 1;
     width: 25%;
-    height: 45%;
+    height: 100%;
     overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 1;
+}
+.gallery img:hover, .hiddenGallery img:hover{
+    transform: scale(1.05);
+    z-index: 0;
+    /* background-color: rgba(0,0,0, 0.3); */
 }
 /* Sekcja Video  */
 

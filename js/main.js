@@ -1,12 +1,24 @@
-'use strict'
+"use strict"
 
 let galleryParagraph = document.querySelector(".galleryParagraph")
 let hiddenGallery = document.querySelector("#hG");
 let hiddenSection  = document.querySelector(".hiddenSection")
 galleryParagraph.addEventListener("click", ()=>{
-    hiddenGallery.classList.toggle("hidden");
-    hiddenSection.style.display = "block"
+    hiddenSection.classList.toggle("galleryHeight");
 })
+
+let galleryImg = document.querySelectorAll(".gallery img")
+let hiddenGalleryImg = document.querySelectorAll(".hiddenGallery img")
+galleryImg.forEach(el => {
+    el.addEventListener("click", ()=>{
+        console.log(el);
+    })
+});
+hiddenGalleryImg.forEach(el => {
+    el.addEventListener("click", ()=>{
+        console.log(el);
+    })
+});
 
 let video = document.querySelector("video");
 let player = document.querySelector(".player")
