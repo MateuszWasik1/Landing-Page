@@ -296,6 +296,36 @@ div:hover .player{
     margin: 0 20px;
     text-align: center;
 }
+
+.slider{
+    height: 50vh;
+    background-color: #10C9C3;
+    color: white;
+    font-family: "Roboto";
+    text-align: center;
+}
+.slider .quote{
+    padding: 10% 10% 5%;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.testimonials{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFF;
+}
+.testimonials img{
+    height: 80%;
+    width: 18%;
+}
+.testimonials img:hover{
+    transform: scale(1.2);
+}
+
 .form{
     height: 80vh;
     background-color: #EEE;
