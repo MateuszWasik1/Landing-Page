@@ -1,0 +1,51 @@
+@media (orientation:landscape){
+
+}
+@media (max-width:560px) and (orientation:landscape){
+    
+}
+@media (max-width:660px) and (orientation:landscape){
+
+}
+@media (max-width:720px) and (orientation:landscape){
+
+}
+@media (max-width:800px) and (orientation:landscape){
+
+}
+@media (max-width:1000px) and (orientation:landscape){
+
+}
+@media (max-width:1280px) and (orientation:landscape){
+
+}
+@media (max-width:1500px) and (orientation:landscape){
+
+}
+@media (max-width:1700px) and (orientation:landscape){
+
+}
+@media (max-width:1900px) and (orientation:landscape) and(orientation:portrait){
+
+}
+@media (max-width:400px) and (orientation:portrait){
+
+}
+@media (max-height:500px) and (orientation:portrait){
+
+}
+@media (max-height:650px) and (orientation:portrait){
+
+}
+@media (max-height:700px) and (orientation:portrait){
+
+}
+@media (max-height:800px) and (orientation:portrait){
+
+}
+@media (max-height:1000px) and (orientation:portrait){
+
+}
+@media (max-width:1000px) and (orientation:portrait){
+    
+}

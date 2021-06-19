@@ -62,17 +62,51 @@ author.textContent = quotes.q1.author
 //         author.textContent = quotes.btnClassName.author
 //     })
 // });
-quoteButton.forEach(btn => {
-    btn.addEventListener("click", ()=>{
-        if(btn.className == "q1"){
-            quote.textContent = quotes.q1.quote
-            author.textContent = quotes.q1.author
-        }else if(btn.className == "q2"){
+let i = 1;
+    let sliderChange = setInterval(()=>{
+        if(i == 1){
             quote.textContent = quotes.q2.quote
             author.textContent = quotes.q2.author
-        }else if(btn.className == "q3"){
+            i++
+        }else if(i == 2){
             quote.textContent = quotes.q3.quote
             author.textContent = quotes.q3.author
+            i++
+        }else if(i == 3){
+            quote.textContent = quotes.q1.quote
+            author.textContent = quotes.q1.author
+            i = 1
         }
-    })
-});
+    },5000)
+
+let q1 = document.querySelector(".q1")
+let q2 = document.querySelector(".q2")
+let q3 = document.querySelector(".q3")
+
+    quoteButton.forEach(btn => {
+        btn.addEventListener("click", ()=>{
+            let actBtn  = btn
+            if(btn.className == "q1"){
+                quote.textContent = quotes.q1.quote
+                author.textContent = quotes.q1.author
+                actBtn.classList.add("activeBtn")
+                q2.classList.remove("activeBtn")
+                q3.classList.remove("activeBtn")
+                return i = 1
+            }else if(btn.className == "q2"){
+                quote.textContent = quotes.q2.quote
+                author.textContent = quotes.q2.author
+                actBtn.classList.add("activeBtn")
+                q1.classList.remove("activeBtn")
+                q3.classList.remove("activeBtn")
+                return i = 2
+            }else if(btn.className == "q3"){
+                quote.textContent = quotes.q3.quote
+                author.textContent = quotes.q3.author
+                actBtn.classList.add("activeBtn")
+                q1.classList.remove("activeBtn")
+                q2.classList.remove("activeBtn")
+                return i = 3
+            }
+        })
+    });

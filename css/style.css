@@ -220,7 +220,7 @@ body{
     z-index: 0;
     /* background-color: rgba(0,0,0, 0.3); */
 }
-/* Sekcja Video  */
+/* Video Section */
 
 .video{
     width: 100%;
@@ -303,11 +303,20 @@ div:hover .player{
     color: white;
     font-family: "Roboto";
     text-align: center;
+    position: relative;
 }
 .slider .quote{
     padding: 10% 10% 5%;
     font-size: 1.3em;
     font-weight: 300;
+}
+.slider button{
+    padding: 5px;
+    border-radius: 50%;
+    border: 0;
+}
+.activeBtn{
+    background-color: red;
 }
 
 .testimonials{
@@ -353,7 +362,7 @@ div:hover .player{
     width: 40%;
     margin-top: 5%;
     margin-bottom: 4%;
-    /* margin-right: (90% - 50%); */
+    /* margin-right: calc(90% - 50%); */
     border: none;
     outline: none;
 }
@@ -375,6 +384,18 @@ div:hover .player{
     font-weight: bold;
     font-size: 0.8em;
 }
+.form form button{
+    margin-top: 25px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+}
+.form form button:hover{
+    cursor: pointer;
+}
+/* Footer od WebPage */
+
 footer{
     height: 25vh;
     background-color: black;
