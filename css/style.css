@@ -459,11 +459,79 @@ footer .socialMedia a{
         text-align: center;
         padding: 20px 20px;
     }
-    nav a{
-        color: red;
+    .description div{
+        margin: 20px 0;
+    }
+    .slider{
+        height: 100vh;
+    }
+    .form{
+        height: 180vh;
+    }
+    footer{
+        height: 120vh;
     }
 }
 @media (min-width:560px) and (orientation:landscape){
+    nav{
+        text-align: center;
+        padding: 20px 20px;
+        font-size: 0.9em;
+    }
+    .slider{
+        height: 90vh;
+    }
+    .form form{
+        padding-top: 5%; 
+    } 
+      /* edytować to  */
+    footer{
+        height: 90vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1em;
+        font-weight: 300;
+        margin: 0 auto;
+    }
+    footer div{
+        width: 100%;
+    }
+    footer .companyData{
+        margin-left: 50px;
+    }
+    footer .contact{
+        margin-left: 50px;
+    
+    }
+    footer .navigation{
+        display: flex;
+        flex-direction: row;
+    }
+    footer .navigation a{
+        text-decoration: none;
+        padding: 20px 25px;
+        color: white;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    footer .socialMedia{
+    
+        display: flex;
+        flex-direction: column;
+        margin: 0 -75% 0 0;
+    }
+    footer .socialMedia a{
+        padding: 5px 0px;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+        
+     
 
 }
 @media (min-width:660px) and (orientation:landscape){
@@ -709,7 +777,6 @@ footer .socialMedia a{
     .gallery img:hover, .hiddenGallery img:hover{
         transform: scale(1.05);
         z-index: 0;
-        /* background-color: rgba(0,0,0, 0.3); */
     }
     /* Video Section */
     
@@ -853,7 +920,6 @@ footer .socialMedia a{
         width: 40%;
         margin-top: 5%;
         margin-bottom: 4%;
-        /* margin-right: calc(90% - 50%); */
         border: none;
         outline: none;
     }
