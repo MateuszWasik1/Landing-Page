@@ -159,16 +159,7 @@ body{
     float: left;
     width: 25%;
     text-align: center;
-    /* line-height: 20vh; nie działa ale można próbować albo znaleźć inny sposób np z table cell */
 }
-/*
-.data div i{
-}
-.data div span{
-}
-.data div p{
-}
-*/
 .gallery{
     height: 70vh;
     width: 100vw;
@@ -372,7 +363,6 @@ div:hover .player{
     padding: 5px 10px ;
     width: 100%;
     margin-bottom: 4%;
-    /* margin-right: calc(90% - 50%); */
     border: none;
     outline: none;
 }
@@ -407,7 +397,7 @@ div:hover .player{
 /* Footer od WebPage */
 
 footer{
-    height: 90vh;
+    height: 70vh;
     background-color: black;
     color: white;
     display: flex;
@@ -434,23 +424,12 @@ footer .navigation{
 }
 footer .navigation a{
     text-decoration: none;
-    padding: 20px 25px;
+    padding: 20px 15px;
     color: white;
     cursor: pointer;
     transition: 0.5s;
 }
-footer .socialMedia{
 
-    display: flex;
-    flex-direction: column;
-    margin: 0 -75% 0 0;
-}
-footer .socialMedia a{
-    padding: 5px 0px;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
 /*po kliknięciu img pojawia się popup ze sliderem (zastosować lightboxa) */
 
 
@@ -469,7 +448,7 @@ footer .socialMedia a{
         height: 180vh;
     }
     footer{
-        height: 120vh;
+        height: 80vh;
     }
 }
 @media (min-width:560px) and (orientation:landscape){
@@ -484,63 +463,122 @@ footer .socialMedia a{
     .form form{
         padding-top: 5%; 
     } 
-      /* edytować to  */
-    footer{
-        height: 90vh;
-        background-color: black;
-        color: white;
+    footer .navigation nav{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 1em;
-        font-weight: 300;
-        margin: 0 auto;
-    }
-    footer div{
-        width: 100%;
-    }
-    footer .companyData{
-        margin-left: 50px;
-    }
-    footer .contact{
-        margin-left: 50px;
-    
-    }
-    footer .navigation{
-        display: flex;
-        flex-direction: row;
     }
     footer .navigation a{
-        text-decoration: none;
-        padding: 20px 25px;
-        color: white;
-        cursor: pointer;
-        transition: 0.5s;
+        padding: 5px 30px;
     }
-    footer .socialMedia{
-    
-        display: flex;
-        flex-direction: column;
-        margin: 0 -75% 0 0;
-    }
-    footer .socialMedia a{
-        padding: 5px 0px;
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-    }
-        
-     
-
 }
 @media (min-width:660px) and (orientation:landscape){
-    
+    .form{
+        height: 150vh;
+    }
+    footer{
+        font-size: 1.3em;
+    }
+    footer .navigation a{
+        padding: 5px 30px;
+    }
 }
 @media (min-width:720px) and (orientation:landscape){
-    
+    nav{
+        font-size: 1.2em;
+    }
+    .fSection div p{
+        font-size: 2em;
+    }
+    .fSection div span{
+        font-size: 1.4em;
+    }
+    .fSection div button{
+        font-size: 1em;
+    }
+    .aboutUs p{
+        font-size: 1.7em;
+    }
+    .aboutUs span{
+        font-size: 1.3em;
+        font-weight: 100;
+    }
+    .data{
+        font-size: 1.2em;
+    }
+    .gallery p{
+        font-size: 1.3em;
+    }
+    .gallery p:hover{
+        font-size:1.4em;
+    }
+    .video p{
+        font-size: 2em;
+    }
+    .video span{
+        font-size: 1em;
+    }
+    .description div i{
+        font-size: 2.5em;
+    }
+    .description div p{
+        font-size: 1.6em;
+    }
+    .description div span{
+        font-size: 1.3em ;
+    }
+    .slider{
+        font-size: 1.3em;
+    }   
+    .form{
+        height: 180vh;
+    }
+    .form p{
+        font-size: 2.5em;
+    }
+    .form span{
+        font-size: 1.5em;
+    }
+    .form form .short{
+        font-size: 1.2em;
+    }
+    .form form .long{
+        font-size: 1.2em;
+    }
+    .form form textarea{
+        font-size: 1.2em;
+    }
+    .form form button{
+        font-size: 1.2em;
+    }
+    footer{
+        height: 67vh;
+        font-size: 1em;
+        flex-direction: row ;
+        flex-wrap: wrap;
+    }
+    footer .companyData, footer .contact{
+        font-size: 1.2em;
+        width: 45%;
+        margin-left: 20px;
+    }
+    footer .navigation a{
+        font-size: 1.35em;
+        padding: 5px 30px 0px 40px;
+    }
 }
 @media (min-width:800px) and (orientation:landscape){
+    .fSection{
+        height: 80vh;
+    }
+    .slider{
+        height: 60vh;
+    }
+    .form{
+        height: 120vh;
+    }
+    footer{
+        height: 55vh;
+    }
     
 }
 @media (min-width:1000px) and (orientation:landscape){
