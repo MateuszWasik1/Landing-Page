@@ -218,7 +218,6 @@ body{
 .gallery img:hover, .hiddenGallery img:hover{
     transform: scale(1.05);
     z-index: 0;
-    /* background-color: rgba(0,0,0, 0.3); */
 }
 /* Video Section */
 
@@ -241,7 +240,7 @@ body{
     padding-bottom: 5%;
 }
 .video div{
-    height: 100%; /*z jakiegoś powodu rozjeżdzą się na małych szerokosciach a bez tego na większych wyjebuje na całą stronę  */
+    height: 100%;
     position: relative;
 }
 .video .videoPlayer{
@@ -324,7 +323,6 @@ div:hover .player{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    /* flex-direction: column; */
     align-items: center;
     background-color: #FFF;
     image-rendering: pixelated;
@@ -338,7 +336,7 @@ div:hover .player{
 }
 
 .form{
-    height: 115vh;
+    height: 120vh;
     background-color: #EEE;
     text-align: center;
 }
@@ -427,9 +425,10 @@ footer .navigation a{
     padding: 20px 15px;
     color: white;
     cursor: pointer;
-    transition: 0.5s;
 }
-
+footer .navigation a:hover{
+    text-decoration: underline;
+}
 /*po kliknięciu img pojawia się popup ze sliderem (zastosować lightboxa) */
 
 
@@ -440,6 +439,9 @@ footer .navigation a{
     }
     .description div{
         margin: 20px 0;
+    }
+    .video{
+        height: 100vh;
     }
     .slider{
         height: 100vh;
@@ -472,6 +474,9 @@ footer .navigation a{
     }
 }
 @media (min-width:660px) and (orientation:landscape){
+    .video{
+        height: 100vh;
+    }
     .form{
         height: 150vh;
     }
@@ -510,6 +515,9 @@ footer .navigation a{
     }
     .gallery p:hover{
         font-size:1.4em;
+    }
+    .video{
+        height: 100vh;
     }
     .video p{
         font-size: 2em;
@@ -570,6 +578,12 @@ footer .navigation a{
     .fSection{
         height: 80vh;
     }
+    .aboutUs{
+        height: 60vh;
+    }
+    .video{
+        height: 80vh;
+    }
     .slider{
         height: 60vh;
     }
@@ -582,295 +596,17 @@ footer .navigation a{
     
 }
 @media (min-width:1000px) and (orientation:landscape){
-    
-}
-@media (min-width:1280px) and (orientation:landscape){
-    
-}
-@media (min-width:1500px) and (orientation:landscape){
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: "Roboto";
-    }
-    .galleryHeight{
-        height: 25vh !important;
-    }
-    .hidden{
-        display: none;
-    }
-    .clearfix::after{
-        content: "";
-        display: block;
-        clear: both;
-    }
-    body{
-        overflow-x: hidden;
-    }
     .nav{
-        text-align: right;
-        text-transform: uppercase;
-        padding:20px 0px;
-        width: 100%;
-        background-color: #10c9c3;
+        font-size: 1.4em;
     }
-    .nav a{
-        text-decoration: none;
-        padding: 0 20px;
-        font-weight: bold;
-        color: black;
-        transition: 0.5s;
-    }
-    .nav a:hover{
-        color: #EE7330
-    }
-    
     .fSection{
-        background-image: url("../img/webDesign.jpg");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        height: 70vh;
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        z-index: 1;
+        font-size: 1.3em;
     }
-    .fSection .container{
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.5);
-        z-index: 2;
-    }
-    .fSection div{
-        width: 40vw;
-        text-align: left;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 3;
-    }
-    .fSection div p{
-        font-size: 3em;
-        padding-bottom: 20px;
-    }
-    .fSection div span{
-        font-size: 1.5em;
-        font-weight: 100;
-        line-break: 5px;
-    }
-    .fSection div button{
-        display: block;
-        margin-top: 20px;
-        padding: 15px 30px;
-        text-transform: uppercase;
-        border: none;
-        color: white;
-        background-color: #10c9c3;
-        font-size: 0.75em;
-        cursor: pointer;
-        transition: 0.5s;
-    }
-    .fSection div button:hover{
-        color:  #10c9c3;
-        background-color: white;
-    }
-    .aboutUs{
-        height: 60vh;
-        width: 50%;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        right: -25%;
-        text-align: center;
-    }
-    .aboutUs p{
-        padding-bottom: 20px;
-        font-size: 2em;
-    }
-    .aboutUs span{
-        font-size: 1.25em;
-        font-weight: 100;
-    }
-    .aboutUs img{
-        width: 400px;
-        height: 200px;
-    }
-    .skills{
-        height: 70vh;
-        background-image: url(../img/bg.png);
-        background-position: center;
-        background-size: cover;
-        position: relative;
-    }
-    .skills div{
-        width: 50%;
-        padding-left: 60px;
-        position: absolute;
-        top: 40%;
-        transform: translateY(-40%);
-    }
-    .skills div p{
-        color: white;
-        font-size: 2.5em;
-        padding-bottom: 30px;
-    }
-    .skills div label{
-        display: block;
-        padding-bottom: 10px;
-        font-size: 1.35em;
-        text-transform: uppercase;
-        color: white;
-        font-weight: 100;
-    }
-    .skills div label meter{
-        display: block;
-        width: 80%;
-        border: none;
-        border-radius: none;
-    }
-    .skills div label meter::-webkit-meter-optimum-value{
-        background: #10c9c3; 
-    }
-    .skills div label meter::-moz-meter-optimum-value {
-        background: #10c9c3; 
-    }
-    .data{
-        height: 20vh;
-        background-color: #10c9c3;
-        color: white;
-    }
-    .data div{
-        float: left;
-        width: 25%;
-        text-align: center;
-        /* line-height: 20vh; nie działa ale można próbować albo znaleźć inny sposób np z table cell */
-    }
-    /*
-    .data div i{
-    }
-    .data div span{
-    }
-    .data div p{
-    }
-    */
-    .gallery{
-        height: 70vh;
-        width: 100vw;
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        overflow-x: hidden;
-    }
-    .gallery img{
-        justify-content: center; 
-        align-items: center; 
-        align-content: center;
-        flex-grow: 1;
-        flex-shrink: 1;
-        width: 25%;
-        height: 45%;
-        overflow-x: hidden;
-        transition: 0.3s;
-        z-index: 1;
-    }
-    .gallery p{
-        height: 10%;
-        width: 100%;
-        margin: 0 auto;
-        line-height: calc((100% - 90%) + 7vh);
-        background-color: lightgray;
-        text-transform: uppercase;
-        cursor: pointer;
-        z-index: 1;
-    }
-    .gallery p:hover{
-        font-size:1.1em;
-    }
-    .hiddenSection{
-        height: 0vh;
-        width: 100vw;
-        display: flex;
-        text-align: center;
-        overflow-x: hidden;
-    }
-    .hiddenGallery{
-        display: flex;
-    }
-    .hiddenGallery img{
-        justify-content: center; 
-        align-items: center; 
-        align-content: center;
-        flex-grow: 1;
-        flex-shrink: 1;
-        width: 25%;
-        height: 100%;
-        overflow-x: hidden;
-        transition: 0.3s;
-        z-index: 1;
-    }
-    .gallery img:hover, .hiddenGallery img:hover{
-        transform: scale(1.05);
-        z-index: 0;
-    }
-    /* Video Section */
-    
-    .video{
-        width: 100%;
-        height: 80vh;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .video p{
-        margin-top: 5%;
-        height: 10%;
-        font-size: 1.75em;
-        font-weight: bold;
-    }
-    .video span{
-        height: calc(70% - 7% - 10%);
-        font-size: 0.75em;
-        width: 55%;
-        color: gray;
-        padding-bottom: 5%;
-    }
-    .video div{
-        height: 100%;
-        position: relative;
-    }
-    .video .videoPlayer{
-        margin-top: 5%;
-        width: 60%;
-        height: 70%;
-        position: relative !important;
-    }
-    .video .player{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50px;
-        height: 50px;
-        outline: none;
-        border-radius: 50%;
-        border: 0px;
-        background-color: rgba(16, 201, 195, 0);
-        font-weight: bold;
-        color: white;
-        transition: 0.5s;
-    }
-    div:hover .player{
-        background-color: rgba(16, 201, 195, 1);
-    }
-    
-    
-    .description{
+     .description{
         background-color: #EEE;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
     }
     .description div{
         width: 25%;
@@ -892,74 +628,28 @@ footer .navigation a{
         margin: 0 20px;
         text-align: center;
     }
-    
-    .slider{
-        height: 50vh;
-        background-color: #10C9C3;
-        color: white;
-        font-family: "Roboto";
-        text-align: center;
-        position: relative;
-    }
-    .slider .quote{
-        padding: 10% 10% 5%;
-        font-size: 1.3em;
-        font-weight: 300;
-    }
-    .slider button{
-        padding: 5px;
-        border-radius: 50%;
-        border: 0;
-    }
-    .activeBtn{
-        background-color: red;
-    }
-    
-    .testimonials{
-        height: 30vh;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #FFF;
-    }
-    .testimonials img{
-        height: 80%;
-        width: 18%;
-    }
-    .testimonials img:hover{
-        transform: scale(1.2);
-    }
-    
     .form{
-        height: 80vh;
-        background-color: #EEE;
+        height: 110vh;
+    }
+}
+@media (min-width:1280px) and (orientation:landscape){
+    .nav{
         text-align: center;
-    }
-    .form p{
-        padding-top: 3%;
-        padding-bottom: 3%;
-        font-size: 2em;
-    }
-    .form span{
-        margin: 0 auto;
         font-size: 1.5em;
-        display: block;
-        width: 50%;
     }
-    .form form{
+    .skills{
+        height: 80vh;
+        font-size: 1.7em;
+    }
+    .aboutUs img{
         width: 60%;
-        margin: 0 auto;
-    
     }
     .form form .short{
-    
-        padding: 5px 10px ;
-        width: 40%;
+        width: 42%;
         margin-top: 5%;
+        margin-right: 3%;
         margin-bottom: 4%;
-        border: none;
-        outline: none;
+        margin-left: 3%;
     }
     .form form .long{
         width: 100%;
@@ -968,49 +658,23 @@ footer .navigation a{
         outline: none;
         margin-bottom: 4%;
     }
-    .form form textarea{
-        width: 100%;
-        border: none;
-        outline: none;
-        padding: 5px 10px;
-    }
-    .form ::placeholder{
-        color: black;
-        font-weight: bold;
-        font-size: 0.8em;
-    }
-    .form form button{
-        margin-top: 25px;
-        padding: 10px 20px;
-        border: 1px solid black;
-        border-radius: 10px;
-        outline: none;
-    }
-    .form form button:hover{
-        cursor: pointer;
-    }
-    /* Footer od WebPage */
-    
     footer{
-        height: 25vh;
-        background-color: black;
-        color: white;
+        height: 28vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        font-size: 1em;
         font-weight: 300;
         margin: 0 auto;
+        flex-wrap: nowrap;
     }
     footer div{
-        width: 24%;
+        width: 50%;
     }
     footer .companyData{
         margin-left: 50px;
     }
     footer .contact{
         margin-left: 50px;
-    
     }
     footer .navigation{
         display: flex;
@@ -1018,33 +682,69 @@ footer .navigation a{
     }
     footer .navigation a{
         text-decoration: none;
-        padding: 20px 25px;
+        padding: 10px 3px;
         color: white;
         cursor: pointer;
         transition: 0.5s;
+        font-size: 0.9em;
     }
-    footer .socialMedia{
-        display: flex;
-        flex-direction: column;
-        margin-left: 60px;
+}
+@media (min-width:1500px) and (orientation:landscape){
+    .nav{
+        font-size: 2em;
+        padding: 20px
     }
-    footer .socialMedia a{
-        padding: 5px 0px;
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
+    .aboutUs{
+        font-size: 1.5em;
     }
-    /*po kliknięciu img pojawia się popup ze sliderem (zastosować lightboxa) */
-    
+    .data{
+        font-size: 1.4em;
+    }
+    .description{
+        font-size: 1.4em
+    }
+    .slider{
+        font-size: 1.6em;
+    }
+    .video{
+        font-size: 1.5em;
+    } 
+    .form{
+        height: 70vh;
+    }
+    .form p{
+        padding: 2%;
+    }
+    .form form{
+        padding-top: 0%;
+    }
+    .form form .short{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .form form .long{
+        margin-bottom: 2%;
+    }
+    footer{
+        font-size: 1.4em;
+    }
 }
-@media (min-width:1700px) and (orientation:landscape){
-    
+@media (min-width:1900px) and (orientation:landscape){
+    .fSection{
+        font-size: 2em;
+    }
 }
-@media (min-width:1900px) and (orientation:landscape) and(orientation:portrait){
-    
-}
-@media (min-width:400px) and (orientation:portrait){
-    
+@media (min-height:400px) and (orientation:portrait){
+    .fSection{
+        height: 90vh;
+    }
+    .aboutUs{
+        height: 65vh;
+    }
+    .description div{
+        margin: 5% auto;
+    }
+    /* zaczać tutaj od dokończenia tego */
 }
 @media (min-height:500px) and (orientation:portrait){
     
