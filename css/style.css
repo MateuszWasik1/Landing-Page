@@ -747,20 +747,135 @@ footer .navigation a:hover{
     /* zaczać tutaj od dokończenia tego */
 }
 @media (min-height:500px) and (orientation:portrait){
+    .slider{
+        height: 65vh;
+    }
+    .form{
+        height: 105vh;
+    }
+    footer{
+        height: 55vh;
+    }
     
 }
 @media (min-height:650px) and (orientation:portrait){
-    
+    .fSection{
+        height: 80vh;
+    }
+    .skills{
+        height: 80vh;
+    }
+    .slider{
+        height: 55vh;
+    }
+    .form{
+        height: 85vh;
+    }
+    footer{
+        height: 45vh;
+    }
 }
 @media (min-height:700px) and (orientation:portrait){
+    .fSection{
+        height: 70vh;
+    }
+    .aboutUs{
+        height: 60vh;
+    }
+    .skills{
+        height: 70vh;
+    }
+    .slider{
+        height: 50vh;
+    }
+    .form{
+        height: 80vh;
+    }
+    footer{
+        height: 40vh;
+    }
     
 }
 @media (min-height:800px) and (orientation:portrait){
+    .fSection{
+        height: 70vh;
+        font-size: 1.3em;
+    }
+    .aboutUs{
+        height: 50vh;
+        font-size: 1.3em;
+    }
+    .skills{
+        height: 60vh;
+    }
+    .video{
+        font-size: 1.3em;
+    }
+    .description{
+        font-size: 1.2em;
+    }
+    .slider{
+        height: 40vh;
+    }
+    footer{
+        height: 30vh;
+        justify-content: space-evenly;
+        flex-direction: row ;
+        flex-wrap: wrap;
+    }
+    footer .companyData, footer .contact{
+        font-size: 1.2em;
+        width: 45%;
+        margin-left: 20px;
+    }
+    footer .navigation a{
+        font-size: 1.35em;
+        padding: 5px 30px 0px 40px;
+    }
     
 }
 @media (min-height:1000px) and (orientation:portrait){
+    .fSection{
+        height: 60vh;
+    }
+    .aboutUs{
+        height: 40vh;
+    }
+    .skills{
+        font-size: 1.3em;
+    }
+    .data{
+        font-size: 1.3em;
+    }
+    .gallery{
+        font-size: 1.3em;
+    }
+    .video{
+        font-size: 1.2em;
+    }
+    .slider{
+        font-size: 1.3em;
+    }
+    .form{
+        height: 65vh;
+        font-size: 1.3em;
+    }
     
 }
-@media (min-width:1000px) and (orientation:portrait){
-    
+@media (min-height:1280px) and (orientation:portrait){
+    .nav{
+        font-size: 1.2em;
+    }
+    .fSection{
+        font-size: 1.4em;
+    }
+    .slider{
+        height: 30vh;
+    }
+    .form{
+        height: 55vh;
+    }
+    footer{
+        height: 25vh;
+    }
 }
