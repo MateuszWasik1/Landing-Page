@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt Technologie Webowe</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="examples/lightbox2-2.11.3/dist/css/lightbox.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f5980c77b0.js" crossorigin="anonymous" async=""></script>
 </head>
@@ -62,23 +63,47 @@
             <p>happy clients</span>
         </div>
     </section>
-    <section class="gallery">
-            <img src="img/WhiteItem0.jpg" alt="Obrazek 0">
+    <section class="gallery" data-lightbox="gallery">
+        <a href="img/WhiteItem0.jpg" data-lightbox="gallery">
+            <img src="img/WhiteItem0.jpg" alt="Obrazek 1">
+        </a>
+        <a href="img/WhiteItem1.jpg" data-lightbox="gallery">
             <img src="img/WhiteItem1.jpg" alt="Obrazek 1">
+        </a>
+        <a href="img/WhiteItem2.jpg" data-lightbox="gallery">
             <img src="img/WhiteItem2.jpg" alt="Obrazek 2">
+        </a>
+        <a href="img/WhiteItem3.jpg" data-lightbox="gallery">
             <img src="img/WhiteItem3.jpg" alt="Obrazek 3">
+        </a>
+        <a href="img/WhiteItem4.jpg" data-lightbox="gallery">
             <img src="img/WhiteItem4.jpg" alt="Obrazek 4">
+        </a>
+        <a href="img/WhiteItem5.jpg" data-lightbox="gallery">
             <img src="img/WhiteItem5.jpg" alt="Obrazek 5">
+        </a>
+        <a href="img/WhiteItem6.jpg" data-lightbox="gallery">
             <img src="img/WhiteItem6.jpg" alt="Obrazek 6">
+        </a>
+        <a href="img/WhiteItem7.jpg" data-lightbox="gallery">
             <img src="img/WhiteItem7.jpg" alt="Obrazek 7">
+        </a>
         <p class="galleryParagraph">load more work</p>
     </section>
     <section class="hiddenSection">
         <div id="hG" class="hidden hiddenGallery">
-            <img src="img/WhiteItem8.jpg" alt="Obrazek 8">
-            <img src="img/WhiteItem9.jpg" alt="Obrazek 9">
-            <img src="img/WhiteItem10.jpg" alt="Obrazek 10">
-            <img src="img/WhiteItem11.jpg" alt="Obrazek 11">
+            <a href="img/WhiteItem8.jpg" data-lightbox="gallery2">
+                <img src="img/WhiteItem8.jpg" alt="Obrazek 8" >
+            </a>
+            <a href="img/WhiteItem9.jpg" data-lightbox="gallery2">
+                <img src="img/WhiteItem9.jpg" alt="Obrazek 9" >
+            </a>
+            <a href="img/WhiteItem10.jpg" data-lightbox="gallery2">
+                <img src="img/WhiteItem10.jpg" alt="Obrazek 10" >
+            </a>
+            <a href="img/WhiteItem11.jpg" data-lightbox="gallery2">
+                <img src="img/WhiteItem11.jpg" alt="Obrazek 11" >
+            </a>
         </div>
     </section>
     <section class="video">
@@ -192,5 +217,6 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="examples/lightbox2-2.11.3/dist/js/lightbox-plus-jquery.js"></script>
 </body>
 </html>

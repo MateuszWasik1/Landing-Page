@@ -168,18 +168,36 @@ body{
     text-align: center;
     overflow-x: hidden;
 }
-.gallery img{
+.gallery a{
+    display: flex;
     justify-content: center; 
     align-items: center; 
     align-content: center;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex-grow: 1; 
+    flex-shrink: 1; 
     width: 25%;
     height: 45%;
     overflow-x: hidden;
     transition: 0.3s;
     z-index: 1;
 }
+ .gallery a img{
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+    /*
+    Jeżeli usunę lighboxa (<a> z HTML to usunąć .gallery a oraz z tego to co nie jest w komentarzu)
+    justify-content: center; 
+    align-items: center; 
+    align-content: center;
+    flex-grow: 1;
+    flex-shrink: 1; 
+    width: 25%;
+    height: 45%; 
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 1; */
+} 
 .gallery p{
     height: 10%;
     width: 100%;
@@ -203,8 +221,24 @@ body{
 .hiddenGallery{
     display: flex;
 }
-.hiddenGallery img{
+.hiddenGallery a{
+    display: flex;
     justify-content: center; 
+    align-items: center; 
+    align-content: center;
+    flex-grow: 1; 
+    flex-shrink: 1; 
+    width: 25%;
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 1;
+}
+.hiddenGallery img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* tak samo jak w galeri wyżej
+     justify-content: center; 
     align-items: center; 
     align-content: center;
     flex-grow: 1;
@@ -213,7 +247,7 @@ body{
     height: 100%;
     overflow-x: hidden;
     transition: 0.3s;
-    z-index: 1;
+    z-index: 1; */
 }
 .gallery img:hover, .hiddenGallery img:hover{
     transform: scale(1.05);
